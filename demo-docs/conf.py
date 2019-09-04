@@ -62,8 +62,8 @@ intersphinx_mapping = {'rtd': ('https://docs.readthedocs.io/en/latest/', None)}
 # -- Options for HTML output ---------------------------------------------------
 
 # themedir = os.path.join(os.pardir, '../')
-from .. import custom_sphinx_theme
-themedir = custom_sphinx_theme.get_path()
+from ..custom_sphinx_theme import get_path
+themedir = get_path()
 print(themedir)
 if not os.path.isdir(themedir):
     raise RuntimeError("Get the scipy-sphinx-theme-v2 first, "
