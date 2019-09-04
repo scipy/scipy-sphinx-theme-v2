@@ -1,0 +1,47 @@
+name: ci
+
+on:
+  pull_request:
+    branches:
+      - master
+
+  push:
+    branches:
+      - master
+
+jobs:
+  test:
+    name: Test run
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        os:
+          - macOS-latest
+          - ubuntu-latest
+          - windows-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: run test
+        env:
+          REF: ${{ github.ref}}
+        run: |
+          echo Checking github env variables:
+          echo ${{ github.actor }}
+          echo ${{ github.event_name }}
+          echo ${{ github.sha }}
+          echo ${REF}
+          IFS='/' read -r -a array <<< "$REF";
+          echo PR number is :
+          echo "${array[2]}";
+  deploy:
+    name: Deploy on surge
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version:
+          - 10
+    steps:
+      - uses: actions/checkout@master
+      - name: deploy in surge using grunt
+        run: grunt deploy --domain=scipy-sphinx-theme-v2.surge.sh
+
