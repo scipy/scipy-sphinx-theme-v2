@@ -48,11 +48,12 @@ jobs:
         env:
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN}}
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN}}
+          REF: ${{ github.ref}}
         run: |
           sudo npm install -g grunt-cli
           sudo pip install -r dependencies/requirements.txt
           sudo apt-get install python3-sphinx
           sudo npm install
-          sudo python setup.py install
-          grunt deploy --domain=scipy-sphinx-theme-v2.surge.sh
+          IFS='/' read -r -a array <<< "$REF";
+          grunt deploy --domain=pr-${array[2]}-scipy-sphinx-theme-v2.surge.sh
 
