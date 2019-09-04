@@ -44,3 +44,4 @@ grunt
 - Every PR will be deployed on surge automatically.
 - URL will be pr-<pr_number>-scipy-sphinx-theme-v2.surge.sh
 - For example: PR #3 is deployed on https://pr-3-scipy-sphinx-theme-v2.surge.sh
+- Test PR: https://github.com/Shekharrajak/scipy-sphinx-theme-v2/pull/4
