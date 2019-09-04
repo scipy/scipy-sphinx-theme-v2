@@ -4,6 +4,8 @@ import os
 sys.path.append(os.path.abspath('..'))
 sys.path.append(os.path.abspath('./demo/'))
 
+# sys.path.insert(0, os.path.abspath('./sphinxext'))
+
 needs_sphinx = '1.1'
 
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.imgmath', 'numpydoc',
@@ -60,15 +62,17 @@ intersphinx_mapping = {'rtd': ('https://docs.readthedocs.io/en/latest/', None)}
 # -- Options for HTML output ---------------------------------------------------
 
 themedir = os.path.join(os.pardir, '../')
+
+print(themedir)
 if not os.path.isdir(themedir):
-    raise RuntimeError("Get the scipy-sphinx-theme first, "
+    raise RuntimeError("Get the scipy-sphinx-theme-v2 first, "
                        "via git submodule init && git submodule update")
 
 html_theme = 'custom_sphinx_theme'
 html_theme_path = [themedir]
 
 #html_logo = '_static/scipyshiny_small.png'
-html_static_path = ['_static']
+# html_static_path = ['_static']
 html_theme_options = {
     "edit_link": "true",
     "sidebar": "right",

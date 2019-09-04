@@ -1,6 +1,7 @@
 sphinxcontrib-httpdomain
 sphinx
 matplotlib
-wheel
 setuptools
 virtualenv
+numpydoc
+wheel

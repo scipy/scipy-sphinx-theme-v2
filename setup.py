@@ -5,7 +5,7 @@ from custom_sphinx_theme import __version__
 setup(
     name = 'custom_sphinx_theme',
     version =__version__,
-    url="https://github.com/shekharrajak/scipy-sphinx-theme@v2",
+    url="https://github.com/shekharrajak/scipy-sphinx-theme-v2",
     description='Custom Sphinx Theme',
     py_modules = ['custom_sphinx_theme'],
     packages = ['custom_sphinx_theme'],
