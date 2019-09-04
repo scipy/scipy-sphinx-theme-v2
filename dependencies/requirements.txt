@@ -2,3 +2,5 @@ sphinxcontrib-httpdomain
 sphinx
 matplotlib
 wheel
+setuptools
+virtualenv
