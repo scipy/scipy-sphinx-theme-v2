@@ -40,6 +40,8 @@ jobs:
       matrix:
         node-version:
           - 10
+        python-version:
+          - 3.7
     steps:
       - uses: actions/checkout@master
       - name: deploy in surge using grunt
@@ -49,5 +51,6 @@ jobs:
         run: |
           sudo npm install -g grunt-cli
           sudo npm install
+          pip install -r dependencies/requirements.txt
           grunt deploy --domain=scipy-sphinx-theme-v2.surge.sh
 
