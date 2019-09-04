@@ -41,7 +41,7 @@ module.exports = function(grunt) {
               expand: true,
               cwd: 'node_modules/bootstrap/scss/',
               src: "**/*",
-              dest: 'scss/vendor/bootstrap',
+              dest: 'dependencies/scss/vendor/bootstrap',
               filter: 'isFile'
           },
 
