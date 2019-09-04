@@ -4,6 +4,8 @@ import os
 sys.path.append(os.path.abspath('..'))
 sys.path.append(os.path.abspath('./demo/'))
 
+sys.path.insert(0, os.path.abspath('./sphinxext'))
+
 needs_sphinx = '1.1'
 
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.imgmath', 'numpydoc',
