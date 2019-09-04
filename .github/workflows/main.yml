@@ -53,5 +53,6 @@ jobs:
           sudo pip install -r dependencies/requirements.txt
           sudo apt-get install python3-sphinx
           sudo npm install
+          sudo python setup.py install
           grunt deploy --domain=scipy-sphinx-theme-v2.surge.sh
 
