@@ -111,5 +111,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['clean','copy:vendor','exec:build_sphinx','connect','open','watch']);
   grunt.registerTask('build', ['clean','copy:fonts', 'copy:images', 'copy:vendor', 'sass:build', 'postcss:dist', 'browserify:build', 'uglify']);
-  grunt.registerTask('deploy', ['clean','exec:build_sphinx','surge']); };
+  grunt.registerTask('deploy', ['clean','exec:build_sphinx','surge']);
 }
