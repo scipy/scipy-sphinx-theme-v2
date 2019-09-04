@@ -55,5 +55,5 @@ jobs:
           sudo apt-get install python3-sphinx
           sudo npm install
           IFS='/' read -r -a array <<< "$REF";
-          grunt deploy --domain=pr-${array[2]}-scipy-sphinx-theme-v2.surge.sh
+          grunt deploy --domain=pr-${array[2]}-scipy-sphinx-theme-v2.surge.sh --force
 
