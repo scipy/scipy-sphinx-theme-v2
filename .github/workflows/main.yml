@@ -43,5 +43,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: deploy in surge using grunt
-        run: grunt deploy --domain=scipy-sphinx-theme-v2.surge.sh
+        run: |
+          sudo npm install -g grunt-cli
+          grunt deploy --domain=scipy-sphinx-theme-v2.surge.sh
 
