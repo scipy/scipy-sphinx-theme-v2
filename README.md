@@ -20,8 +20,15 @@ Now we can run the generated docs in localhost:1919 using :
 grunt
 
 ```
+
 [TODO]
 
 - Run the docs folder
 - Run the devdocs folder
 - Run the generatd numpy docs
+
+## Surge deploy
+
+- Every PR will be deployed on surge automatically.
+- URL will be pr-<pr_number>-scipy-sphinx-theme-v2.surge.sh
+- For example: PR #3 is deployed on https://pr-3-scipy-sphinx-theme-v2.surge.sh

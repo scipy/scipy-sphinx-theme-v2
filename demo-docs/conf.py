@@ -61,9 +61,10 @@ intersphinx_mapping = {'rtd': ('https://docs.readthedocs.io/en/latest/', None)}
 
 # -- Options for HTML output ---------------------------------------------------
 
-themedir = os.path.join(os.pardir, '../')
+themedir = os.path.join(os.pardir, './')
 
 print(themedir)
+
 if not os.path.isdir(themedir):
     raise RuntimeError("Get the scipy-sphinx-theme-v2 first, "
                        "via git submodule init && git submodule update")
