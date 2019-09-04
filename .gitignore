@@ -30,6 +30,8 @@ __pycache__
 */**/**/**/*.pyc
 */**/**/**/**/*.pyc
 
+*/**/make.dat
+
 *.egg-info
 *.egg
 *build/
