@@ -4,3 +4,4 @@ matplotlib
 wheel
 setuptools
 virtualenv
+numpydoc
