@@ -43,6 +43,9 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: deploy in surge using grunt
+        env:
+          SURGE_TOKEN: ${{ secret.SURGE_TOKEN}}
+          SURGE_LOGIN: ${{ secret.SURGE_LOGIN}}
         run: |
           sudo npm install -g grunt-cli
           sudo npm install
