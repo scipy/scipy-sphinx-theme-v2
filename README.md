@@ -7,6 +7,13 @@ Run python setup to install the theme:
 python setup.py install
 ```
 
+To install the dependencies for this theme, run:
+
+```
+pip install -r dependencies/requirements.txt
+```
+
+
 In the root directory install the dependencies of `package.json`:
 
 ```
@@ -20,6 +27,11 @@ Now we can run the generated docs in localhost:1919 using :
 grunt
 
 ```
+
+**Note:**
+
+- Sample docs is present on demo-docs folder.
+- grunt will automatically refresh the page when we do changes in the docs file.
 
 [TODO]
 
