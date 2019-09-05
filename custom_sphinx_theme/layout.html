@@ -8,6 +8,8 @@
 {%- endif %}
 {%- set lang_attr = 'en' if language == None else (language | replace('_', '-')) %}
 
+{% import 'theme_variables.jinja' as theme_variables %}
+
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="{{ lang_attr }}" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="{{ lang_attr }}" > <!--<![endif]-->
@@ -75,6 +77,9 @@
   <!-- preloader css -->
   <link rel="stylesheet" href="{{ pathto('_static/css/preloader.css'  , 1) }}" type="text/css" />
 
+  <!-- preloader css -->
+  <link rel="stylesheet" href="{{ pathto('_static/css/navbar.css'  , 1) }}" type="text/css" />
+
   <!-- font -->
    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
 
@@ -111,14 +116,13 @@
     {%- endif %}
   {%- endblock %}
   {%- block extrahead %} {% endblock %}
-  {% include "preloader.html" %}
 </head>
 
 
-
+{% include "preloader.html" %}
 <body class="wy-body-for-nav">
 
-
+  {% include "navbar.html" %}
 
   {% block extrabody %} {% endblock %}
   <div class="wy-grid-for-nav">

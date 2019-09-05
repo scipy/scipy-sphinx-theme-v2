@@ -1,0 +1,35 @@
+<!-- This navbar is from hugo-fresh theme -->
+<nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+    <!-- below was for having numpy logo in navbar -->
+      <!-- <a class="navbar-item" href="/">
+        <img src="{{ pathto('_static/images/numpy_logo.svg', 1) }}" alt="" width="112" height="28">
+      </a> -->
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+      <div id="navbar-menu" class="navbar-menu is-static">
+
+        <div class="navbar-end">
+          <a href="{{ theme_variables.external_urls['quick_start'] }}" class="navbar-item is-secondary">
+            Quick Start
+          </a>
+
+          <a href="{{ theme_variables.external_urls['documentation'] }}" class="navbar-item is-secondary">
+            Documentation
+          </a>
+
+          <a href="{{ theme_variables.external_urls['neps'] }}" class="navbar-item is-secondary">
+            NumPy Enhancement Proposals (NEPs)
+          </a>
+
+        </div>
+      </div>
+  </div>
+</nav>
