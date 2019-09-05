@@ -75,6 +75,9 @@
   <!-- preloader css -->
   <link rel="stylesheet" href="{{ pathto('_static/css/preloader.css'  , 1) }}" type="text/css" />
 
+  <!-- font -->
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+
   {%- for css in css_files %}
     {%- if css|attr("rel") %}
   <link rel="{{ css.rel }}" href="{{ pathto(css.filename, 1) }}" type="text/css"{% if css.title is not none %} title="{{ css.title }}"{% endif %} />
