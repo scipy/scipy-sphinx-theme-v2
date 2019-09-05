@@ -54,5 +54,4 @@ jobs:
           sudo pip install -r dependencies/requirements.txt
           sudo npm install
           IFS='/' read -r -a array <<< "$REF";
-          grunt deploy --domain=pr-${array[2]}-scipy-sphinx-theme-v2.surge.sh --force
-
+          grunt deploy --domain=pr-${array[2]}-scipy-sphinx-theme-v2.surge.sh
