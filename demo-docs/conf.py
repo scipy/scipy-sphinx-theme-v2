@@ -80,6 +80,7 @@ html_theme_options = {
     "scipy_org_logo": "true",
     "rootlinks": [("http://scipy.org/", "Scipy.org"),
                   ("http://docs.scipy.org/", "Docs")]
+    # "extra_scripts": ['path/to/extrajs.js']
 }
 
 #------------------------------------------------------------------------------
