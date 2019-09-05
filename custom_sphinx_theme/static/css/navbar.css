@@ -234,13 +234,16 @@
 }
 @media screen and (min-width: 1101px) {
   .header-holder .main-menu ul {
-    padding-left: 0;
-    margin-left: 26%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1600px) {
   .header-holder .main-menu ul {
-    padding-left: 38px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
