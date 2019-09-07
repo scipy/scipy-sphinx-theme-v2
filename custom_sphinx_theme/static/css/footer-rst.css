@@ -1,0 +1,8 @@
+.footer-rst{
+  bottom: 0;
+}
+
+html{min-height:100%;}
+body{
+    height:100%;  /*force the BODY element to match the height of the HTML element*/
+}
