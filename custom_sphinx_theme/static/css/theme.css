@@ -5942,7 +5942,7 @@ html {
 }
 
 .wy-menu-vertical {
-    width: 300px
+    width: auto;
 }
 
 .wy-menu-vertical header,
@@ -6147,7 +6147,7 @@ html {
 
 .wy-side-nav-search {
     display: block;
-    width: 300px;
+    width: auto;
     padding: .809em;
     margin-bottom: .809em;
     z-index: 200;
@@ -6266,7 +6266,6 @@ html {
 }
 
 .wy-nav-side {
-    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -6281,7 +6280,7 @@ html {
 }
 
 .wy-side-scroll {
-    width: 320px;
+    width: auto;
     position: relative;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -6340,8 +6339,7 @@ html {
 .wy-nav-content {
     padding: 1.618em 3.236em;
     height: 100%;
-    max-width: 800px;
-    margin: auto
+    margin: auto;
 }
 
 .wy-body-mask {
