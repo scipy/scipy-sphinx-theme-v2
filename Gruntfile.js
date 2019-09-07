@@ -20,14 +20,14 @@ module.exports = function(grunt) {
 
     open : {
       dev: {
-        path: 'http://localhost:1919'
+        path: 'http://localhost:2121'
       }
     },
 
     connect: {
       server: {
         options: {
-          port: 1919,
+          port: 2121,
           base: 'demo-docs/build',
           livereload: true
         }
