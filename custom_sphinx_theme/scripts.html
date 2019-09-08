@@ -1,8 +1,11 @@
+
+
 <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable({{ 'true' if theme_sticky_navigation|tobool else 'false' }});
       });
-  </script>
+</script>
+
 
   <!-- bootstrap js -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -41,4 +44,60 @@ $(document).ready(function() {
     $(".bg_loader").css("display", "block");
 });
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+<!-- every anchor tag will do smooth scroll -->
+<script type="text/javascript">
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+</script>
+
+<script>
+//Get the button
+var mybutton = document.getElementById('scrollTop');
+
+// When the user scrolls down 20px from the top of the document, show the button
+$(document).scroll(function() {
+    console.log('Scrolled to ' + $(this).scrollTop());
+  })
+
+$( window ).scroll(function() {
+  console.log('Scrolled to ' + $(this).scrollTop());
+});
+
+$("#scrollTop").on( 'scroll', function(){
+   console.log('Event Fired');
+});
+
+window.onscroll = function()  {
+  console.log(document.body.scrollTop );
+  console.log('Scroll event fired.......');
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  console.log(document.body.scrollTop );
+  console.log('Click event fired.......');
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+
+}
+</script>
+
+

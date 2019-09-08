@@ -25,43 +25,48 @@
     <div class="wy-grid-for-nav row">
         {% include "sidenav.html" %}
         <!-- <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"> -->
-            {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
-            <nav class="wy-nav-top" aria-label="top navigation">
-                {% block mobile_nav %}
-                <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-                <a href="{{ pathto(master_doc) }}">{{ project }}</a>
-                {% endblock %}
-            </nav>
-            <div class="wy-nav-content col-8">
-                {%- block content %}
-                {% if theme_style_external_links|tobool %}
-                <div class="rst-content style-external-links">
-                    {% else %}
-                    <div class="rst-content">
-                        {% endif %}
-                        {% include "breadcrumbs.html" %}
-                        <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-                            {%- block document %}
-                            <div itemprop="articleBody">
-                                {% block body %}{% endblock %}
-                            </div>
-                            {% if self.comments()|trim %}
-                            <div class="articleComments">
-                                {% block comments %}{% endblock %}
-                            </div>
-                            {% endif%}
+        {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
+        <nav class="wy-nav-top" aria-label="top navigation">
+            {% block mobile_nav %}
+            <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+            <a href="{{ pathto(master_doc) }}">{{ project }}</a>
+            {% endblock %}
+        </nav>
+        <div class="wy-nav-content col-8">
+            {%- block content %}
+            {% if theme_style_external_links|tobool %}
+            <div class="rst-content style-external-links">
+                {% else %}
+                <div class="rst-content">
+                    {% endif %}
+                    {% include "breadcrumbs.html" %}
+                    <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                        {%- block document %}
+                        <div itemprop="articleBody">
+                            {% block body %}{% endblock %}
                         </div>
-                        {%- endblock %}
-                        {% include "footer.html" %}
+                        {% if self.comments()|trim %}
+                        <div class="articleComments">
+                            {% block comments %}{% endblock %}
+                        </div>
+                        {% endif%}
                     </div>
                     {%- endblock %}
+                    {% include "footer.html" %}
                 </div>
-                {% include "sidebar-right.html" %}
+                {%- endblock %}
             </div>
+            {% include "sidebar-right.html" %}
+            <span href="" onclick="topFunction()" id="scrollTop" title="Go to top"
+      class="btn btn-neutral float-left">
+        <i class="fa fa-arrow-circle-up"></i>
+    </span>
+        </div>
         <!-- </section> -->
     </div>
     {% include "versions.html" %}
     {% include "scripts.html" %}
+
 </body>
 
 </html>
