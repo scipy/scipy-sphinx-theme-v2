@@ -19,7 +19,7 @@
 
   {# JAVASCRIPTS #}
   {%- block scripts %}
-  <script type="text/javascript" src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
+ <!-- TODO: remove the js file <script type="text/javascript" src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script> -->
   {%- if not embedded %}
   {# XXX Sphinx 1.8.0 made this an external js-file, quick fix until we refactor the template to inherert more blocks directly from sphinx #}
     {% if sphinx_version >= "1.8.0" %}
@@ -44,6 +44,16 @@
       {%- endfor %}
     {% endif %}
     <script type="text/javascript" src="{{ pathto('_static/js/theme.js', 1) }}"></script>
+
+    <!-- to search keyword -->
+    <script type="text/javascript" src="{{ pathto('_static/searchtools.js', 1) }}""></script>
+<!--     TODO: I don't know why these js are generated automatically by sphinx.
+For search these both are not needed.
+
+    <script type="text/javascript" src="{{ pathto('_static/underscore.js', 1) }}""></script>
+    <script type="text/javascript" src="{{ pathto('_static/language_data.js', 1) }}""></script>
+-->
+    <script type="text/javascript" src="{{ pathto('searchindex.js', 1) }}""></script>
 
     {# OPENSEARCH #}
     {%- if use_opensearch %}
