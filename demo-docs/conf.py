@@ -10,7 +10,8 @@ needs_sphinx = '1.1'
 
 extensions = ['sphinx.ext.autodoc', 'sphinx.ext.imgmath', 'numpydoc',
               'sphinx.ext.intersphinx', 'sphinx.ext.coverage',
-              'sphinx.ext.autosummary', 'matplotlib.sphinxext.plot_directive']
+              'sphinx.ext.autosummary', 'matplotlib.sphinxext.plot_directive',
+              ]
 
 
 templates_path = ['_templates']
@@ -80,7 +81,7 @@ html_theme_options = {
     "scipy_org_logo": "true",
     "rootlinks": [("http://scipy.org/", "Scipy.org"),
                   ("http://docs.scipy.org/", "Docs")]
-    # "extra_scripts": ['path/to/extrajs.js']
+  # "extra_scripts": ['path/to/extrajs.js']
 }
 
 #------------------------------------------------------------------------------
@@ -115,4 +116,20 @@ plot_rcparams = {
     'figure.subplot.top': 0.85,
     'figure.subplot.wspace': 0.4,
     'text.usetex': False,
+}
+
+
+# Edit on github option
+
+html_context = {
+  "display_github": True,
+  "last_updated": True,
+  "commit": False,
+  'source_url_prefix': "https://github.com/Shekharrajak/scipy-sphinx-theme-v2/tree/master/demo-docs",
+  "github_host": "github.com",
+  "github_user": "shekharrajak",
+  "github_repo": "scipy-sphinx-theme-v2",
+  "github_version": "master",
+  "conf_py_path": "/demo-docs/",
+  "source_suffix": '.rst',
 }
