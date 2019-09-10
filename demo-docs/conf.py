@@ -8,7 +8,7 @@ sys.path.append(os.path.abspath('./demo/'))
 
 needs_sphinx = '1.1'
 
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.imgmath', 'numpydoc',
+extensions = ['sphinx.ext.autodoc', 'numpydoc',
               'sphinx.ext.intersphinx', 'sphinx.ext.coverage',
               'sphinx.ext.autosummary', 'matplotlib.sphinxext.plot_directive',
               ]
