@@ -1,35 +1,20 @@
-
-
-<div class="container-fluid header-holder tutorials-header" id="header-holder">
-  <div class="container">
-    <div class="header-container">
-      <a class="header-logo" href="{{ theme_variables.external_urls['home'] }}" aria-label="main navigation"></a>
-
-      <div class="main-menu">
-        <ul>
-          <li>
-            <a href="{{ theme_variables.external_urls['quick_start'] }}" class="navbar-item is-secondary">
-            Quick Start
-          </a>
-          </li>
-
-          <li>
-            <a href="{{ theme_variables.external_urls['documentation'] }}" class="navbar-item is-secondary">
-            Documentation
-          </a>
-          </li>
-
-          <li>
-            <a href="{{ theme_variables.external_urls['neps'] }}" class="navbar-item is-secondary">
-                        NumPy Enhancement Proposals (NEPs)
-                      </a>
-          </li>
-
+<!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand navbar-left header-logo" href="{{ theme_variables.external_urls['home'] }}"><img src="_static/images/numpy_logo.svg"></a>
+    <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="nav">
+        <ul class="nav navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold px-3" href="{{ theme_variables.external_urls['quick_start'] }}">Quick Start</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold px-3" href="{{ theme_variables.external_urls['documentation'] }}">Documentation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark font-weight-bold px-3" href="{{ theme_variables.external_urls['neps'] }}">NumPy Enhancement Proposals (NEPs)</a>
+            </li>
         </ul>
-      </div>
-
-      <a class="main-menu-open-button" href="#" data-behavior="open-mobile-menu"></a>
     </div>
-
-  </div>
-</div>
+</nav>
