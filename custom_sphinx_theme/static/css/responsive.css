@@ -1,22 +1,20 @@
-.header-logo {
-  width: 7%;
-}
+/* various device */
 
-
-  #sidenav-left-toggle-button{
-    display: none;
-  }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 /* Styles */
-  .header-logo {
-    width: 7%;
+  .wy-nav-content{
+    max-width: 100%;
   }
 
-  #sidenav-left-toggle-button{
-    display: block;
+  .wy-nav-top {
+    display: none;
+  }
+
+  .wy-nav-side{
+    display: none;
   }
 }
 
@@ -24,13 +22,8 @@ and (max-device-width : 480px) {
 @media only screen
 and (min-width : 321px) {
 /* Styles */
-  .header-logo {
-    width: 7%;
-  }
-
-
-  #sidenav-left-toggle-button{
-    display: block;
+  .wy-nav-content{
+    max-width: 100%;
   }
 
 }
@@ -39,14 +32,18 @@ and (min-width : 321px) {
 @media only screen
 and (max-width : 320px) {
 /* Styles */
-  .header-logo {
-    width: 7%;
+  .wy-nav-content{
+    max-width: 100%;
   }
 
-
-  #sidenav-left-toggle-button{
-    display: block;
+  .wy-nav-top {
+    display: none;
   }
+
+  .wy-nav-side{
+    display: none;
+  }
+
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -54,13 +51,16 @@ and (max-width : 320px) {
 and (min-device-width : 768px)
 and (max-device-width : 1024px) {
 /* Styles */
-  .header-logo {
-    width: 7%;
+  .wy-nav-content{
+    max-width: 100%;
   }
 
+  .wy-nav-top {
+    display: none;
+  }
 
-  #sidenav-left-toggle-button{
-    display: block;
+  .wy-nav-side{
+    display: none;
   }
 
 }
@@ -71,13 +71,16 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : landscape) {
 /* Styles */
-  .header-logo {
-    width: 7%;
+  .wy-nav-content{
+    max-width: 100%;
   }
 
+  .wy-nav-top {
+    display: none;
+  }
 
-  #sidenav-left-toggle-button{
-    display: block;
+  .wy-nav-side{
+    display: none;
   }
 
 }
@@ -88,13 +91,16 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)
 and (orientation : portrait) {
 /* Styles */
-  .header-logo {
-    width: 7%;
+  .wy-nav-content{
+    max-width: 100%;
   }
 
+  .wy-nav-top {
+    display: none;
+  }
 
-  #sidenav-left-toggle-button{
-    display: block;
+  .wy-nav-side{
+    display: none;
   }
 
 }
@@ -102,29 +108,14 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen
 and (min-width : 1224px) {
-/* Styles */
-  .header-logo {
-    width: 7%;
-  }
 
-
-  #sidenav-left-toggle-button{
-    display: none;
-  }
 }
 
 /* Large screens ----------- */
 @media only screen
 and (min-width : 1824px) {
-/* Styles */
-  .header-logo {
-    width: 7%;
-  }
 
 
-  #sidenav-left-toggle-button{
-    display: none;
-  }
 }
 
 /* iPhone 4 ----------- */
@@ -132,51 +123,48 @@ and (min-width : 1824px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 /* Styles */
-  .header-logo {
-    width: 7%;
+  .wy-nav-content{
+    max-width: 100%;
   }
+
 }
 
 /*###Desktops, big landscape tablets and laptops(Large, Extra large)####*/
-/*@media screen and (min-width: 1024px){
-  .header-logo {
-    width: 7%;
-  }
+@media screen and (min-width: 1024px){
+/*Style*/
 
-
-  #sidenav-left-toggle-button{
-    display: none;
-  }
-}*/
+}
 
 /*###Tablet(medium)###*/
-/*@media screen and (min-width : 768px) and (max-width : 1023px){
-  .header-logo {
-    width: 13%;
+@media screen and (min-width : 768px) and (max-width : 1023px){
+/*Style*/
+  .wy-nav-content{
+    max-width: 100%;
   }
 
-
-  #sidenav-left-toggle-button{
+  .wy-nav-top {
     display: none;
   }
 
-}*/
+  .wy-nav-side{
+    display: none;
+  }
+
+}
 
 /*### Smartphones (portrait and landscape)(small)### */
 @media screen and (min-width : 0px) and (max-width : 767px){
 /*Style*/
-  .header-logo {
-    width: 25%;
+  .wy-nav-content{
+    max-width: 100%;
   }
 
-  #sidenav-left-toggle-button{
-    display: block;
+  .wy-nav-top {
+    display: none;
   }
 
-}
+  .wy-nav-side{
+    display: none;
+  }
 
-.btn-primary-outline {
-  background-color: transparent;
-  border-color: #ccc;
-  color: black;
 }
