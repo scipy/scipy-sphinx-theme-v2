@@ -28,6 +28,25 @@ grunt
 
 ```
 
+### Grunt options
+
+- 'grunt --project=docs'
+
+This will first look for the path of the numpy/doc in .env file. To make it
+work we first need to speficy the path of the numpy source folder.
+
+Example: If you have placed the numpy source code in the same directory of the
+scipy-sphinx-theme-v2 then `.env` file will have:
+
+```
+{
+
+"DOCS_DIR":"../numpy/doc/source"
+
+}
+
+```
+
 **Note:**
 
 - Sample docs is present on demo-docs folder.
