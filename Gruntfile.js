@@ -14,6 +14,7 @@ module.exports = function(grunt) {
       break;
    }
 
+  var BUILD_DIR = PROJECT_DIR + 'build/';
   grunt.initConfig({
     // Read package.json
     pkg: grunt.file.readJSON("package.json"),
@@ -28,7 +29,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 2121,
-          base: 'demo-docs/build',
+          base: BUILD_DIR,
           livereload: true
         }
       }
@@ -62,18 +63,21 @@ module.exports = function(grunt) {
 
     exec: {
       build_sphinx: {
-        cmd: 'sphinx-build ' + PROJECT_DIR + ' demo-docs/build'
+        cmd: 'sphinx-build ' + PROJECT_DIR + ' ' + BUILD_DIR
       }
     },
     clean: {
-      build: ["demo-docs/build"],
+      options: {
+        force: true
+      },
+      build: [BUILD_DIR],
     },
 
     watch: {
 
       /* Changes in theme dir rebuild sphinx */
       sphinx: {
-        files: ['custom_sphinx_theme/**/*', 'README.rst', 'demo-docs/**/*.rst', 'demo-docs/**/*.py'],
+        files: ['custom_sphinx_theme/**/*', 'README.rst', 'demo-docs/**/*.rst', PROJECT_DIR + '*/*.py'],
         tasks: ['clean:build','exec:build_sphinx']
       },
       /* JavaScript */
@@ -83,7 +87,7 @@ module.exports = function(grunt) {
       },
       /* live-reload the docs if sphinx re-builds */
       livereload: {
-        files: ['demo-docs/build/**/*'],
+        files: [BUILD_DIR + '**/*'],
         options: { livereload: true }
       }
     },
@@ -91,7 +95,7 @@ module.exports = function(grunt) {
       'scipy-sphinx-theme-v2': {
         options: {
           // The path or directory to your compiled project
-          project: 'demo-docs/build/',
+          project: BUILD_DIR,
           // The domain or subdomain to deploy to
           domain: grunt.option('domain')
         }
@@ -110,6 +114,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-browserify');
 
   grunt.registerTask('default', ['clean','exec:build_sphinx','connect','open','watch']);
-  // grunt.registerTask('build', ['clean']);
+  grunt.registerTask('build', ['clean', 'exec:build_sphinx']);
   grunt.registerTask('deploy', ['clean','exec:build_sphinx','surge']);
+  grunt.registerTask('serve', ['connect','open', 'watch']);
 }
