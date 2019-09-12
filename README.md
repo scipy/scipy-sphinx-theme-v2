@@ -47,6 +47,17 @@ scipy-sphinx-theme-v2 then `.env` file will have:
 
 ```
 
+- 'grunt build'
+
+
+Using this command sphinx build command will run for the project dir on the build directory.
+
+Default project directory is `demo-docs`. You can specify the project directory using `grunt --project=docs build`. Now the new project directory
+will be whatever is set in your .env file.
+
+Build directory will be `project_dir/build`.
+
+
 **Note:**
 
 - Sample docs is present on demo-docs folder.
