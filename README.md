@@ -57,6 +57,12 @@ will be whatever is set in your .env file.
 
 Build directory will be `project_dir/build`.
 
+- 'grunt serve'
+
+If you have already build the HTML files and just want to get it live on `localhost:2121` (means skip the build part), then run `grunt serve`.
+
+This command will serve the build directory on `localhost:2121`.
+
 
 **Note:**
 
