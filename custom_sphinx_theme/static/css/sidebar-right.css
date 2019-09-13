@@ -143,8 +143,6 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
     display: block;
     margin-bottom: 1px;
-    background: #FFF;
-    text-transform: uppercase;
     border-bottom: 1px solid #D5D5D5;
 }
 
@@ -156,23 +154,6 @@ only screen and (min-device-pixel-ratio : 1.5) {
     color: #102aa4;
     box-sizing: border-box;
     background: #d9f4ff;
-}
-
-.sidebar-right-nav>ul li ul li a {
-    padding: 0px 19px;
-    line-height: 20px;
-    text-decoration: none;
-    position: relative;
-    color: #175FA0;
-    margin-left: 0px;
-    margin-right: 0px;
-    transition: color 300ms linear;
-    -o-transition: color 300ms linear;
-    -ms-transition: color 300ms linear;
-    -moz-transition: color 300ms linear;
-    -webkit-transition: color 300ms linear;
-    font-size: smaller;
-    font-family: inherit;
 }
 
 .hidden {
