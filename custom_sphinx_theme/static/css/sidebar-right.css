@@ -128,3 +128,16 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 
 }
+
+.sidebar-right-nav ul li ul {
+  padding-top: 2%;
+  padding-left: 4%;
+}
+
+.sidebar-right-nav > ul > li > ul > li{
+  border-top: 1px solid #90aab7;
+}
+
+.sidebar-right-nav ul li{
+  padding-top: 2%;
+}
