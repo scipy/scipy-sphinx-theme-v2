@@ -3,3 +3,21 @@
         {{ toc }}
     </div>
 </div>
+
+<script type="text/javascript">
+
+  $(function () {
+
+    $("<span class='clickMe'><i class='fa fa-angle-down'></i><i class='fa fa-angle-up' style='display: none;'></i><span>").insertBefore(".sidebar-right-nav ul li a.reference" );
+
+    $('.clickMe').click(function () {
+        var $i_tag = $(this).find("i");
+
+        $(this).closest("li").find("ul").slideToggle(function(){
+          $i_tag.toggle();
+        });
+
+    });
+});
+</script>
+
