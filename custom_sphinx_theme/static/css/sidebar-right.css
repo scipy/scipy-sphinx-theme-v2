@@ -129,16 +129,58 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 }
 
-.sidebar-right-nav ul li ul {
+.sidebar-right-nav > ul li ul {
   padding-top: 2%;
   padding-bottom: 2%;
   padding-left: 4%;
+
+  list-style-type: none;
+    width: 95%;
+    margin: 0px;
+    padding: 0px;
+    margin: 0 auto;
 }
 
 .sidebar-right-nav > ul > li > ul > li{
   border-top: 1px solid #90aab7;
 }
 
-.sidebar-right-nav ul li{
+.sidebar-right-nav > ul li{
   padding-top: 2%;
+
+  display: block;
+    margin-bottom: 1px;
+    background: #FFF;
+    text-transform: uppercase;
+    border-bottom: 1px solid #D5D5D5;
 }
+
+.sidebar-right-nav > ul li a.current, .sidebar-right-nav ul li a:hover {
+  border-left: 4px solid #E55302;
+    border-right: 4px solid #E55302;
+    margin-left: -4px;
+    margin-right: -4px;
+    color: #e67e22;
+    box-sizing: border-box;
+    background: #FFEEE5;
+}
+
+.sidebar-right-nav > ul li ul li a{
+      padding: 10px 20px;
+    line-height: 20px;
+    text-decoration: none;
+    position: relative;
+    color: #175FA0;
+    margin-left: 0px;
+    margin-right: 0px;
+    transition: color 300ms linear;
+    -o-transition: color 300ms linear;
+    -ms-transition: color 300ms linear;
+    -moz-transition: color 300ms linear;
+    -webkit-transition: color 300ms linear;
+}
+
+.hidden{
+  display: none;
+}
+
