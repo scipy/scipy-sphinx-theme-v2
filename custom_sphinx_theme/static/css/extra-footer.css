@@ -10,13 +10,13 @@ h4 {
  padding:0!important
 }
 .footer-big {
- padding:105px 0 65px 0
+ padding: 2% 0 1% 0;
 }
 .footer-big .footer-widget {
  margin-bottom:40px
 }
 .footer--light {
- background:#e7e8ed
+ background: white;
 }
 .footer-big .footer-menu ul li a,.footer-big p,.footer-big ul li {
  color:#898b96
@@ -45,7 +45,6 @@ h4 {
 .mini-footer {
  background:#192027;
  text-align:center;
- padding:32px 0
 }
 .mini-footer p {
  margin:0;
@@ -53,15 +52,14 @@ h4 {
  font-size:15px;
  color:#999
 }
-.mini-footer p a {
- color:#5867dd
-}
+
 .mini-footer p a:hover {
  color:#34bfa3
 }
 .widget-about img {
  display:block;
- margin-bottom:30px
+ margin-bottom:30px;
+ width: 60%;
 }
 .widget-about p {
  font-weight:400
