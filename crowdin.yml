@@ -1,7 +1,0 @@
-project_identifier: scipy-sphinx-theme-v2-demo-docs
-api_key: 9ee3d40a7d9b220eeb77bc49c83ba6e3
-base_path: .
-preserve_hierarchy: true
-files:
-  - source: /demo-docs/**/*.rst
-    translation: /demo-docs/%two_letters_code/**/%_%original_file_name%
