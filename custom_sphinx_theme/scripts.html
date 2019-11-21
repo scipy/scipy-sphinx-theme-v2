@@ -12,6 +12,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
+  {%- block scripts %}
   {# Do not conflict with RTD insertion of analytics script #}
   {% if not READTHEDOCS %}
     {% if theme_analytics_id %}
@@ -28,6 +29,7 @@
 
     {% endif %}
   {% endif %}
+  {%- endblock %}
 
   <!-- If user wants to add external js file -->
   <!-- TODO :This is deprecated -  remove it -->
