@@ -12,6 +12,9 @@ module.exports = function(grunt) {
     case "devdocs":
       PROJECT_DIR = envJSON.DEVDOCS_DIR;
       break;
+    case "neps":
+      PROJECT_DIR = envJSON.NEPS_DIR;
+      break;
    }
 
   var BUILD_DIR = PROJECT_DIR + 'build/';
