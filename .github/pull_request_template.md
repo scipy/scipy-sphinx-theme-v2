@@ -2,8 +2,8 @@
 was changed. Do not include the issue number in the title. -->
 
 #### References to other Issues or PRs
-<!-- If this pull request fixes an issue, write "Fixes #NNNN" in that exact
-format, e.g. "Fixes #1234". See
+<!-- If this pull request fixes an issue, write "Fixes gh-NNNN" in that exact
+format, e.g. "Fixes gh-1234". See
 https://github.com/blog/1506-closing-issues-via-pull-requests . Please also
 write a comment on that issue linking back to this pull request once it is
 open. -->
@@ -19,7 +19,6 @@ open. -->
 #### Other comments
 <!-- Any pending work (TODO) -->
 
-<!-- Contribution guide : https://github.com/SciRuby/daru-view/blob/master/CONTRIBUTING.md -->
 
 #### Deployed URL
 
