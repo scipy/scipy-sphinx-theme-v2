@@ -5670,6 +5670,7 @@ h6,
 legend {
     margin-top: 0;
     font-weight: 700;
+    border-bottom: 1px solid #ccc;
 }
 
 p {
