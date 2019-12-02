@@ -1,0 +1,29 @@
+<div class="wy-nav-content sidebar-right col-2" id="sidebar-right">
+    <div class="sidebar-right-nav" id="sidebar-right-nav">
+        {{ toc }}
+    </div>
+</div>
+
+<script type="text/javascript">
+
+  $(function () {
+
+    $("<span class='clickMe'><i class='fa fa-angle-up'></i><i class='fa fa-angle-down' style='display: none;'></i><span>").insertBefore(".sidebar-right-nav ul li a.reference" );
+
+    $(".sidebar-right-nav ul li span.clickMe").map(function() {
+        if($(this).closest("li").children("ul").length == 0){
+          $(this).hide();
+        };
+    })
+
+    $('.clickMe').click(function () {
+        var $i_tag = $(this).find("i");
+
+        $(this).closest("li").find("ul").slideToggle(function(){
+          $i_tag.toggle();
+        });
+
+    });
+});
+</script>
+
