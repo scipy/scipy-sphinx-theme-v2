@@ -67,13 +67,8 @@ This command will serve the build directory on `localhost:2121`.
 **Note:**
 
 - Sample docs is present on demo-docs folder.
-- grunt will automatically refresh the page when we do changes in the docs file.
+- grunt will automatically refresh the page when we do changes in the docs file. So it makes the development easy.
 
-[TODO]
-
-- Run the docs folder
-- Run the devdocs folder
-- Run the generatd numpy docs
 
 ## Surge deploy
 
