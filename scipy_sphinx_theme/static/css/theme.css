@@ -6406,14 +6406,12 @@ footer span.commit .rst-content tt,
 }
 
 #search-results .search li {
-    margin-bottom: 24px;
     border-bottom: solid 1px #e1e4e5;
-    padding-bottom: 24px
+    padding-bottom: 5px
 }
 
 #search-results .search li:first-child {
     border-top: solid 1px #e1e4e5;
-    padding-top: 24px
 }
 
 #search-results .search li a {
