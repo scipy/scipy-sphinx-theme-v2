@@ -5958,7 +5958,10 @@ html {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 85%;
-    white-space: nowrap
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
 }
 
 .wy-menu-vertical ul {
