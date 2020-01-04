@@ -6125,6 +6125,7 @@ html {
     position: relative;
     font-size: 90%;
     color: white;
+    word-break: break-word;
 }
 
 .wy-menu-vertical a:hover {
