@@ -28,11 +28,6 @@ and (min-width : 321px) {
     width: 7%;
   }
 
-
-  #sidenav-left-toggle-button{
-    display: block;
-  }
-
 }
 
 /* Smartphones (portrait) ----------- */
