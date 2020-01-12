@@ -175,3 +175,8 @@ only screen and (min-device-pixel-ratio : 1.5) {
   border-color: #ccc;
   color: black;
 }
+
+div.nav-top {
+  margin: 0 auto;
+  max-width: 11.5in;
+}
