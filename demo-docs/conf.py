@@ -11,6 +11,7 @@ needs_sphinx = '1.1'
 extensions = ['sphinx.ext.autodoc', 'numpydoc',
               'sphinx.ext.intersphinx', 'sphinx.ext.coverage',
               'sphinx.ext.autosummary', 'matplotlib.sphinxext.plot_directive',
+              'sphinx.ext.mathjax'
               ]
 
 
